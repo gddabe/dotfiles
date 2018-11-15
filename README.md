@@ -19,5 +19,5 @@ source ~/.zshrc
 ```
 #### Install goodies
 ```
-brew cask install google-chrome dropbox
+brew cask install google-chrome dropbox karabiner-elements hyper hammerspoon
 ```
