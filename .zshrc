@@ -1,4 +1,4 @@
-export DOT=~/.dotfiles-antigen
+export DOT=~/.dotfiles
 
 export PATH="$DOT/bin:$PATH"
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
