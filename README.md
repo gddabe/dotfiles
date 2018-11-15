@@ -4,7 +4,7 @@
 ```
 #### Install useful packages
 ```
-brew install git zsh coreutils
+brew install git zsh coreutils antigen
 ```
 #### Change to zsh
 ```
