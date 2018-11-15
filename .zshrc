@@ -8,4 +8,4 @@ source $DOT/antigen.zsh
 source $DOT/functions.zsh
 source $DOT/aliases.zsh
 source $DOT/history.zsh
-source $DOT/assets/z.sh
+source $DOT/bin/z.sh
