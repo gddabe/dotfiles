@@ -13,6 +13,7 @@ chsh -s /usr/local/bin/zsh
 ```
 #### Create symlink and restart shell
 ```
+cd ~
 ln -s ~/.dotfiles/.zshrc .zshrc
 source ~/.zshrc
 ```
