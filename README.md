@@ -15,6 +15,11 @@ chsh -s /usr/local/bin/zsh
 ```
 cd ~
 ln -s ~/.dotfiles/.zshrc .zshrc
+ln -s ~/.dotfiles/.gitignore .gitignore
+ln -s ~/.dotfiles/.gitconfig .gitconfig
+ln -s ~/.dotfiles/.editorconfig .editorconfig
+ln -s ~/.dotfiles/.hyper.js .hyper.js
+ln -s ~/.dotfiles/.hammerspoon .hammerspoon
 source ~/.zshrc
 ```
 #### Install goodies
