@@ -11,6 +11,11 @@ brew install git zsh coreutils antigen
 sudo sh -c 'echo "/usr/local/bin/zsh" >> /etc/shells'
 chsh -s /usr/local/bin/zsh
 ```
+#### Create symlink and restart shell
+```
+ln -s ~/.dotfiles/.zshrc .zshrc
+source ~/.zshrc
+```
 #### Install goodies
 ```
 brew cask install google-chrome dropbox
