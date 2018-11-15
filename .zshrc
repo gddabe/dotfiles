@@ -1,8 +1,8 @@
 export DOT=~/.dotfiles
 
 export PATH="$DOT/bin:$PATH"
-export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
-export MANPATH="$(brew --prefix coreutils)/libexec/gnuman:$MANPATH"
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 source $DOT/antigen.zsh
 source $DOT/functions.zsh
