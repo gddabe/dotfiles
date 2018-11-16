@@ -56,7 +56,7 @@ alias reload="exec ${SHELL} -l"
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
 
-# Killall VLC
-#alias killvlc="ps aux | grep -ie '[v]lc' | awk '{print \$2}' | xargs kill -9"
+# Copy pubkey to pasteboard
+alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 
 alias j="jav -o . -s"
