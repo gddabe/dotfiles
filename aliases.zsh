@@ -44,7 +44,7 @@ alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && 
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
 # Backup
-#alias backup='rsync -ahvP --exclude=".DS_Store"'
+alias backup='rsync -ahvP --exclude=".DS_Store"'
 
 # Brew update
 alias update="brew update && brew outdated && brew upgrade && brew cleanup"
