@@ -6,6 +6,10 @@
 ```
 brew install git zsh coreutils antigen
 ```
+#### Clone this repo
+```
+git clone https://github.com/gddabe/dotfiles.git ~/.dotfiles
+```
 #### Change to zsh
 ```
 sudo sh -c 'echo "/usr/local/bin/zsh" >> /etc/shells'
@@ -30,5 +34,8 @@ brew cask install google-chrome dropbox karabiner-elements hyper hammerspoon
 #### Linux
 ```
 sudo apt-get install git curl
-curl -L git.io/antigen > antigen.zsh
+sudo mkdir /usr/local/share/antigen
+sudo curl -L git.io/antigen > /usr/local/share/antigen/antigen.zsh
+git clone https://github.com/gddabe/dotfiles.git ~/.dotfiles
+ln -s ~/.dotfiles/.zshrc .zshrc
 ```
