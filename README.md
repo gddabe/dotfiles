@@ -29,5 +29,6 @@ brew cask install google-chrome dropbox karabiner-elements hyper hammerspoon
 
 #### Linux
 ```
+sudo apt-get install git
 curl -L git.io/antigen > antigen.zsh
 ```
