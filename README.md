@@ -26,3 +26,8 @@ source ~/.zshrc
 ```
 brew cask install google-chrome dropbox karabiner-elements hyper hammerspoon
 ```
+
+#### Linux
+```
+curl -L git.io/antigen > antigen.zsh
+```
