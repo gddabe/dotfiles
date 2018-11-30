@@ -117,6 +117,9 @@
 		# Speed up commands involving untracked files such as `git status`.
 		# https://git-scm.com/docs/git-update-index#_untracked_cache
 		untrackedCache = true
+	autocrlf = false
+	eol = LF
+	fileMode = false
 
 [color]
 
@@ -152,6 +155,7 @@
 
 		# Detect copies as well as renames
 		renames = copies
+	renamelimit = 5000
 
 [diff "bin"]
 
