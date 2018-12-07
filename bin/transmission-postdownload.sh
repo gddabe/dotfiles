@@ -5,7 +5,7 @@
 #echo $TR_TORRENT_ID
 
 TR_TORRENT_DIR="/Volumes/ramdisk"
-TR_TORRENT_NAME="SSNI-358.mp4"
+TR_TORRENT_NAME="XXXX-999.mp4"
 
 DESTFOLDER="/Volumes/My Book/test"
 LOGFILENAME="transmissionlog.txt"
