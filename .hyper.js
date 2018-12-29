@@ -36,7 +36,14 @@ module.exports = {
     css: '',
 
     // custom css to embed in the terminal window
-    termCSS: '.wc-node.unicode-node{width: 1em}',
+		//termCSS: '.wc-node.unicode-node{width: 2em}',
+		termCSS: `
+      * {
+        -webkit-font-feature-settings: "liga" on, "calt" on, "dlig" on !important;
+        text-rendering: optimizeLegibility !important;
+        font-weight: bold;
+			}
+		`,
 
     // set to `true` (without backticks) if you're using a Linux setup that doesn't show native menus
     // default: `false` on Linux, `true` on Windows (ignored on macOS)
@@ -48,7 +55,8 @@ module.exports = {
     showWindowControls: '',
 
     // custom padding (css format, i.e.: `top right bottom left`)
-    padding: '12px 14px',
+		//padding: '12px 14px',
+		padding: '.9rem',
 
     // the full list. if you're going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
@@ -116,7 +124,7 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    'hyper-solarized-dark'
+		'hyper-solarized-dark',
     // 'hyperterm-base16-tomorrow-dark'
   ],
 
