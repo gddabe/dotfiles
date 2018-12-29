@@ -25,6 +25,11 @@ source ~/.zshrc
 ```
 brew cask install google-chrome dropbox karabiner-elements hyper hammerspoon
 ```
+#### Install SF Mono font for hyper, currently this font is only provided in terminal.app
+```
+cd /Applications/Utilities/Terminal.app/Contents/Resources/Fonts/
+cp *.otf ~/Library/Fonts/
+```
 ## Linux (Debian/Ubuntu)
 #### Install necessary packages
 ```
