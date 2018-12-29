@@ -1,4 +1,4 @@
-## Mac
+# Mac
 #### Install Homebrew and necessary packages
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -30,7 +30,8 @@ brew cask install google-chrome dropbox karabiner-elements hyper hammerspoon
 cd /Applications/Utilities/Terminal.app/Contents/Resources/Fonts/
 cp *.otf ~/Library/Fonts/
 ```
-## Linux (Debian/Ubuntu)
+
+# Linux (Debian/Ubuntu)
 #### Install necessary packages
 ```
 sudo apt-get install git curl zsh
