@@ -50,7 +50,7 @@ function ramdisk() {
   #let ramsize=$2*2048;
   #diskutil erasevolume HFS+ $1 `hdiutil attach -nomount ram://$ramsize`;
   if ! test -e /Volumes/ramdisk ; then
-    diskutil erasevolume HFS+ ramdisk `hdiutil attach -nomount ram://$((8*1024*1024*2))`;
+    diskutil erasevolume HFS+ ramdisk `hdiutil attach -nomount ram://$((20*1024*1024*2))`;
   else
     echo "ramdisk exists already!"
   fi
