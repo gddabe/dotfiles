@@ -177,6 +177,11 @@ hs.hotkey.bind(hyper, "i", function ()
   hs.alert.show(cell)
 end)
 
+hs.hotkey.bind(hyper, "`", function ()
+  local win = hs.window.focusedWindow()
+	win:minimize()
+end)
+
 hs.hotkey.bind(hyper, "space", function()
   local currentWin = hs.window.focusedWindow()
   local nextScreen = currentWin:screen():next()
