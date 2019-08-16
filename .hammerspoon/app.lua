@@ -15,9 +15,9 @@ hs.hotkey.bind(hyper, "a", function()
 end)
 
 hs.hotkey.bind(hyper, "s", function()
-  hs.application.launchOrFocus("Spotify")
+  hs.application.launchOrFocus("Google Chrome")
 end)
 
 hs.hotkey.bind(hyper, "d", function()
-  hs.application.launchOrFocus("VMWare Fusion")
+  hs.application.launchOrFocus("Hyper")
 end)
