@@ -10,8 +10,8 @@ antigen use oh-my-zsh
 antigen bundle z
 # antigen bundle brew
 # antigen bundle npm
-# antigen bundle docker
-# antigen bundle docker-compose
+antigen bundle docker
+antigen bundle docker-compose
 # antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle fzf
 

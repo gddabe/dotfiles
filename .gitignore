@@ -49,3 +49,5 @@ log/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+*.zwc
