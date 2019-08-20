@@ -1,6 +1,5 @@
 # Taps
 tap 'caskroom/cask'
-tap 'homebrew/bundle'
 
 # Binaries
 brew 'coreutils' # Those that come with macOS are outdated
@@ -12,6 +11,7 @@ brew 'trash' # Manage the Trash bin
 brew 'tree' # List directories in a tree structure
 brew 'z'
 brew 'fzf'
+brew 'mackup'
 
 # Apps
 cask 'alfred'

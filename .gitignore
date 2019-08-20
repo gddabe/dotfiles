@@ -50,4 +50,6 @@ log/
 ehthumbs.db
 Thumbs.db
 
+# Antigen generated files #
+###########################
 *.zwc
