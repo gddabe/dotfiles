@@ -66,15 +66,15 @@ sudo mkdir /usr/local/share/antigen
 sudo curl -L git.io/antigen > /usr/local/share/antigen/antigen.zsh
 ```
 
-#### Set zsh as default shell
-
-```
-chsh -s /usr/bin/zsh
-```
-
-#### Clone this repo, create symlink and restart shell
+#### Create symlink and restart shell
 
 ```
 ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 source ~/.zshrc
+```
+
+#### Make ZSH the default shell environment
+
+```
+chsh -s /usr/bin/zsh
 ```
