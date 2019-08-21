@@ -1,5 +1,15 @@
 # Mac
 
+> This is what my terminal looks like. It is sleek, minimal and fast.
+
+![image](https://user-images.githubusercontent.com/3678065/63402938-d0507c80-c40f-11e9-837e-aaf6978dd2b4.png)
+
+The core components are
+
+- Prompt - [Pure](https://github.com/sindresorhus/pure)
+- Terminal - [Hyper](https://github.com/zeit/hyper)
+- Color scheme - [Solarized](https://ethanschoonover.com/solarized/)
+
 ### Clone this repo and run install script
 
 ```
