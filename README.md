@@ -2,7 +2,7 @@
 
 > This is what my terminal looks like. It is sleek, minimal and fast. It is based on [Pure](https://github.com/sindresorhus/pure), [Hyper](https://github.com/zeit/hyper) and [Solarized](https://ethanschoonover.com/solarized/)
 
-![image](https://user-images.githubusercontent.com/3678065/63402938-d0507c80-c40f-11e9-837e-aaf6978dd2b4.png)
+![image](https://user-images.githubusercontent.com/3678065/63404116-95047c80-c414-11e9-8e82-39d115e7bb8c.png)
 
 ## Installation
 
