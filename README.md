@@ -9,7 +9,7 @@
 
 # Installation
 
-### Clone this repo and run install script
+## Clone this repo and run install script
 
 ```
 git clone https://github.com/gddabe/dotfiles.git ~/.dotfiles && cd ~/.dotfiles
@@ -17,14 +17,14 @@ git clone https://github.com/gddabe/dotfiles.git ~/.dotfiles && cd ~/.dotfiles
 chmod a+x install.sh
 ./install.sh
 ```
-
-> Install homebrew
+## Things it does
+#### Install homebrew
 
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-> Install all our dependencies with bundle (See Brewfile)
+#### Install all our dependencies with bundle (See Brewfile)
 
 ```
 brew update
@@ -32,7 +32,7 @@ brew tap homebrew/bundle
 brew bundle
 ```
 
-> Create symlink and restart shell
+#### Create symlink and restart shell
 
 ```
 ln -sf ~/.dotfiles/hammerspoon ~/.hammerspoon
@@ -44,7 +44,7 @@ ln -sf ~/.dotfiles/.mackup.cfg ~/.mackup.cfg
 ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 ```
 
-> Make ZSH the default shell environment
+#### Make ZSH the default shell environment
 
 ```
 chsh -s $(which zsh)
@@ -57,9 +57,9 @@ exec ${SHELL} -l
 cp /Applications/Utilities/Terminal.app/Contents/Resources/Fonts/*.otf ~/Library/Fonts/
 ```
 
-# Linux (Debian/Ubuntu)
+# Installation for Linux (Debian/Ubuntu)
 
-#### Clone this repo
+## Clone this repo
 
 ```
 git clone https://github.com/gddabe/dotfiles.git ~/.dotfiles
