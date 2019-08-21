@@ -18,7 +18,11 @@ brew tap homebrew/bundle
 brew bundle
 
 # Create symlink and restart shell
-ln -sf ~/.dotfiles/hammerspoon ~/.hammerspoon
+if [ ! -f ~/.hammerspoon ]
+then
+	rm -rf ~/.hammerspoon
+fi
+ln -s ~/.dotfiles/hammerspoon ~/.hammerspoon
 ln -sf ~/.dotfiles/.gitignore ~/.gitignore
 ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/.dotfiles/.editorconfig ~/.editorconfig
