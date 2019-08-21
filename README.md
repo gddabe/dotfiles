@@ -59,7 +59,7 @@ cp /Applications/Utilities/Terminal.app/Contents/Resources/Fonts/*.otf ~/Library
 
 # Installation for Linux (Debian/Ubuntu)
 
-## Clone this repo
+#### Clone this repo
 
 ```
 git clone https://github.com/gddabe/dotfiles.git ~/.dotfiles
