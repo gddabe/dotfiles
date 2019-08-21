@@ -4,7 +4,7 @@ export DOT=~/.dotfiles
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
-source $DOT/antigen.zsh
-source $DOT/functions.zsh
-source $DOT/aliases.zsh
-source $DOT/history.zsh
+source $DOT/zsh/antigen.zsh
+source $DOT/zsh/functions.zsh
+source $DOT/zsh/aliases.zsh
+source $DOT/zsh/history.zsh
