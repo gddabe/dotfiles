@@ -52,6 +52,6 @@ chsh -s /usr/bin/zsh
 ```
 ### Clone this repo, create symlink and restart shell
 ```
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
+ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 source ~/.zshrc
 ```
