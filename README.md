@@ -1,6 +1,6 @@
 # gddabe's dotfiles
 
-> This is what my terminal looks like. It is sleek, minimal and fast. It is based on [Pure](https://github.com/sindresorhus/pure), [Hyper](https://github.com/zeit/hyper) and [Solarized](https://ethanschoonover.com/solarized/)
+> This is what my terminal looks like. It is sleek, minimal and fast. It is based on [Pure](https://github.com/sindresorhus/pure), [Hyper](https://github.com/zeit/hyper) and [Solarized](https://ethanschoonover.com/solarized/).
 
 ![image](https://user-images.githubusercontent.com/3678065/63404116-95047c80-c414-11e9-8e82-39d115e7bb8c.png)
 
@@ -29,7 +29,7 @@ brew tap homebrew/bundle
 brew bundle
 ```
 
-#### Create symlink and restart shell
+#### Create symlink
 
 ```
 ln -sf ~/.dotfiles/hammerspoon ~/.hammerspoon
@@ -41,7 +41,7 @@ ln -sf ~/.dotfiles/.mackup.cfg ~/.mackup.cfg
 ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 ```
 
-#### Make ZSH the default shell environment
+#### Make ZSH the default shell environment and restart shell
 
 ```
 chsh -s $(which zsh)
@@ -53,6 +53,8 @@ exec ${SHELL} -l
 ```
 cp /Applications/Utilities/Terminal.app/Contents/Resources/Fonts/*.otf ~/Library/Fonts/
 ```
+
+---
 
 # Installation for Linux (Debian/Ubuntu)
 
@@ -70,15 +72,15 @@ sudo mkdir /usr/local/share/antigen
 sudo curl -L git.io/antigen > /usr/local/share/antigen/antigen.zsh
 ```
 
-#### Create symlink and restart shell
+#### Create symlink
 
 ```
 ln -sf ~/.dotfiles/.zshrc ~/.zshrc
-source ~/.zshrc
 ```
 
-#### Make ZSH the default shell environment
+#### Make ZSH the default shell environment and restart shell
 
 ```
 chsh -s /usr/bin/zsh
+source ~/.zshrc
 ```
