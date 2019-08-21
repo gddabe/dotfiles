@@ -1,21 +1,18 @@
-> This is what my terminal looks like. It is sleek, minimal and fast.
+# gddabe's dotfiles
+
+> This is what my terminal looks like. It is sleek, minimal and fast. It is based on [Pure](https://github.com/sindresorhus/pure), [Hyper](https://github.com/zeit/hyper) and [Solarized](https://ethanschoonover.com/solarized/)
 
 ![image](https://user-images.githubusercontent.com/3678065/63402938-d0507c80-c40f-11e9-837e-aaf6978dd2b4.png)
 
-<!-- The core components are
-- Prompt - [Pure](https://github.com/sindresorhus/pure)
-- Terminal - [Hyper](https://github.com/zeit/hyper)
-- Color scheme - [Solarized](https://ethanschoonover.com/solarized/) -->
+## Installation
 
-# Installation
-
-## Clone this repo and run install script
-
+#### Clone me
 ```
 git clone https://github.com/gddabe/dotfiles.git ~/.dotfiles && cd ~/.dotfiles
-
-chmod a+x install.sh
-./install.sh
+```
+#### Run install
+```
+chmod a+x install.sh && ./install.sh
 ```
 ## Things it does
 #### Install homebrew
