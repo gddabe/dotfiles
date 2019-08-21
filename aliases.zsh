@@ -60,7 +60,7 @@ alias path='echo -e ${PATH//:/\\n}'
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 
 alias j="jav -o . -s"
-alias y="youtube-dl"
+alias y="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'"
 
 alias dcu="docker-compose up -d"
 alias dcd="docker-compose down"
