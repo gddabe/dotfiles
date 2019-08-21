@@ -54,9 +54,7 @@ exec ${SHELL} -l
 cp /Applications/Utilities/Terminal.app/Contents/Resources/Fonts/*.otf ~/Library/Fonts/
 ```
 
----
-
-# Installation for Linux (Debian/Ubuntu)
+## Installation for Linux (Debian/Ubuntu)
 
 #### Clone this repo
 
