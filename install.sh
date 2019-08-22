@@ -30,11 +30,19 @@ ln -sf ~/.dotfiles/.hyper.js ~/.hyper.js
 ln -sf ~/.dotfiles/.mackup.cfg ~/.mackup.cfg
 ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 
+# Set macOS preferences
+# We will run this last because this will reload the shell
+# source .macos
+
+# Dock cleanup
+dockutil --no-restart --remove all
+dockutil --no-restart --add "/Applications/Google Chrome.app"
+dockutil --no-restart --add "/Applications/Hyper.app"
+dockutil --no-restart --add "/Applications/System Preferences.app"
+
+killall Dock
+
 # Make ZSH the default shell environment
 echo "Making zsh the default shell..."
 chsh -s $(which zsh)
 exec ${SHELL} -l
-
-# Set macOS preferences
-# We will run this last because this will reload the shell
-# source .macos

@@ -12,6 +12,7 @@ brew 'tree' # List directories in a tree structure
 brew 'z'
 brew 'fzf'
 brew 'mackup'
+brew 'dockutil'
 
 # Apps
 cask 'alfred'
