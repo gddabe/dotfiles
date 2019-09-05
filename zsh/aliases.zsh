@@ -64,5 +64,7 @@ alias mp4="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'"
 alias mp3="youtube-dl -x --audio-format mp3"
 alias j="z"
 
+alias dc="docker-compose"
+alias dcrun="docker-compose run --rm"
 alias dcu="docker-compose up -d"
 alias dcd="docker-compose down"
