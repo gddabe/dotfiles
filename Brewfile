@@ -1,5 +1,5 @@
 # Taps
-tap 'caskroom/cask'
+# tap 'caskroom/cask'
 
 # Binaries
 brew 'coreutils' # Those that come with macOS are outdated
