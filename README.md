@@ -56,7 +56,7 @@ exec ${SHELL} -l
 > (optional) Install SF Mono font for hyper, currently this font is only provided in terminal.app
 
 ```
-cp /Applications/Utilities/Terminal.app/Contents/Resources/Fonts/*.otf ~/Library/Fonts/
+cp /System/Applications/Utilities/Terminal.app/Contents/Resources/Fonts/*.otf ~/Library/Fonts/
 ```
 
 # Installation for Linux (Debian/Ubuntu)
