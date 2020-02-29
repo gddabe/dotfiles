@@ -84,7 +84,7 @@ function server() {
 }
 
 # fd - cd to selected directory
-c() {
+fd() {
   local dir
   dir=$(find ${1:-.} -path '*/\.*' -prune \
                   -o -type d -print 2> /dev/null | fzf +m) &&
@@ -94,4 +94,11 @@ c() {
 # fh - search in your command history and execute selected command
 x() {
   eval $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
+}
+
+# ff - cd into the directory of the selected file
+ff() {
+   local file
+   local dir
+   file=$(fzf +m -q "$1") && dir=$(dirname "$file") && cd "$dir"
 }
