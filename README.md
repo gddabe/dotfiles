@@ -70,7 +70,7 @@ git clone https://github.com/gddabe/dotfiles.git ~/.dotfiles
 #### Install necessary packages
 
 ```
-sudo apt-get install git curl zsh
+sudo apt-get install git curl zsh fzf
 sudo mkdir /usr/local/share/antigen
 sudo curl -L git.io/antigen > /usr/local/share/antigen/antigen.zsh
 ```
