@@ -6,22 +6,22 @@ brew 'coreutils' # Those that come with macOS are outdated
 brew 'zsh'
 brew 'git'
 brew 'antigen'
-brew 'mas' # Mac App Store manager
-brew 'trash' # Manage the Trash bin
+#brew 'mas' # Mac App Store manager
+#brew 'trash' # Manage the Trash bin
 brew 'tree' # List directories in a tree structure
 brew 'z'
 brew 'fzf'
-brew 'mackup'
+#brew 'mackup'
 brew 'dockutil'
 
 # Apps
-cask 'alfred'
+#cask 'alfred'
 cask 'docker'
-cask 'dropbox'
+#cask 'dropbox'
 cask 'firefox'
 cask 'google-chrome'
 cask 'tor-browser'
-cask 'transmit'
+#cask 'transmit'
 cask 'the-unarchiver'
 cask 'telegram'
 cask 'whatsapp'

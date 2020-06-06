@@ -27,7 +27,7 @@ ln -sf ~/.dotfiles/.gitignore ~/.gitignore
 ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/.dotfiles/.editorconfig ~/.editorconfig
 ln -sf ~/.dotfiles/.hyper.js ~/.hyper.js
-ln -sf ~/.dotfiles/.mackup.cfg ~/.mackup.cfg
+#ln -sf ~/.dotfiles/.mackup.cfg ~/.mackup.cfg
 ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 
 # Set macOS preferences
