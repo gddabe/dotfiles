@@ -1,6 +1,3 @@
-# Taps
-# tap 'caskroom/cask'
-
 # Binaries
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'zsh'
@@ -20,7 +17,7 @@ cask 'docker'
 #cask 'dropbox'
 cask 'firefox'
 cask 'google-chrome'
-cask 'tor-browser'
+#cask 'tor-browser'
 #cask 'transmit'
 cask 'the-unarchiver'
 cask 'telegram'
