@@ -9,7 +9,7 @@ if test ! $(which brew); then
 fi
 
 # Update Homebrew recipes
-echo "Updating brew..."
+echo "Updating homebrew..."
 brew update
 
 # Install all our dependencies with bundle (See Brewfile)
