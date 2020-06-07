@@ -3,8 +3,8 @@
 echo "Setting up your Mac..."
 
 # Install homebrew
+echo "Installing homebrew..."
 if test ! $(which brew); then
-	echo "Installing homebrew..."
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
@@ -17,6 +17,7 @@ echo "Installing bundles..."
 brew tap homebrew/bundle
 brew bundle
 
+echo "Creating essential file links..."
 # Create symlink and restart shell
 if [ ! -f ~/.hammerspoon ]
 then
@@ -35,10 +36,14 @@ ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 # source .macos
 
 # Dock cleanup
+echo "Reseting the dock..."
 dockutil --no-restart --remove all
 dockutil --no-restart --add "/Applications/Google Chrome.app"
 dockutil --no-restart --add "/Applications/Hyper.app"
-dockutil --no-restart --add "/Applications/System Preferences.app"
+
+echo "Getting pubkey from github..."
+mkdir -p ~/.ssh
+curl https://github.com/gddabe.keys | tee -a ~/.ssh/id_rsa.pub
 
 killall Dock
 
