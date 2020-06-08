@@ -53,3 +53,7 @@ Thumbs.db
 # Antigen generated files #
 ###########################
 *.zwc
+
+# Brew generated files #
+########################
+Brewfile.lock.json
