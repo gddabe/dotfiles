@@ -1,11 +1,18 @@
-export DOT=~/.dotfiles
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
 
-# export PATH="$DOT/bin:$PATH"
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-export PATH="/usr/local/Cellar/node/12.10.0/bin:$PATH"
-export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
 
-source $DOT/zsh/antigen.zsh
-source $DOT/zsh/functions.zsh
-source $DOT/zsh/aliases.zsh
-source $DOT/zsh/history.zsh
+# Customize to your needs...
+# change to pure prompt
+prompt pure
+
+# enable fzf search in cmd...
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
