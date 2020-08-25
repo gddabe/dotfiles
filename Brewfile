@@ -1,4 +1,4 @@
-tap homebrew/cask-fonts
+tap 'homebrew/cask-fonts'
 
 # Binaries
 brew 'coreutils' # Those that come with macOS are outdated
