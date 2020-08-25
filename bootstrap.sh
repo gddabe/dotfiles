@@ -15,11 +15,7 @@ dockutil --no-restart --add "/Applications/Hyper.app"
 
 killall Dock
 
-# Make ZSH the default shell environment
-echo "Making zsh the default shell..."
-chsh -s $(which zsh)
-exec ${SHELL} -l
-
+# Create symlinks
 ln -sf ~/.dotfiles/.zpreztorc ~/.zpreztorc
 ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 ln -sf ~/.dotfiles/hammerspoon ~/.hammerspoon
@@ -27,3 +23,8 @@ ln -sf ~/.dotfiles/.gitignore ~/.gitignore
 ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/.dotfiles/.editorconfig ~/.editorconfig
 ln -sf ~/.dotfiles/.hyper.js ~/.hyper.js
+
+# Make ZSH the default shell environment
+echo "Making zsh the default shell..."
+chsh -s $(which zsh)
+exec ${SHELL} -l
