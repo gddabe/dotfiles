@@ -1,24 +1,24 @@
+tap homebrew/cask-fonts
+
 # Binaries
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'zsh'
 brew 'git'
 brew 'antigen'
-#brew 'mas' # Mac App Store manager
-#brew 'trash' # Manage the Trash bin
 brew 'tree' # List directories in a tree structure
 brew 'z'
 brew 'fzf'
-#brew 'mackup'
 brew 'dockutil'
+#brew 'mackup'
+#brew 'mas' # Mac App Store manager
+#brew 'trash' # Manage the Trash bin
 
 # Apps
-#cask 'alfred'
+cask 'font-fira-code'
+cask 'alfred'
 cask 'docker'
-#cask 'dropbox'
 cask 'firefox'
 cask 'google-chrome'
-#cask 'tor-browser'
-#cask 'transmit'
 cask 'the-unarchiver'
 cask 'telegram'
 cask 'whatsapp'
@@ -27,6 +27,9 @@ cask 'hammerspoon'
 cask 'hyper'
 cask 'visual-studio-code'
 cask 'iina'
+#cask 'dropbox'
+#cask 'tor-browser'
+#cask 'transmit'
 
 # Mac App Store
 # mas '1Password', id: 1333542190
