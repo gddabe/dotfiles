@@ -12,8 +12,8 @@ module.exports = {
 		fontSize: 12,
 
 		// font family with optional fallbacks
-		fontFamily:
-			'"FiraCode-Retina", "Fira Code", monospace',
+		fontFamily: '"FiraCodeNerdFontComplete-Retina", monospace',
+		// fontFamily: '"FiraCode-Retina", "Fira Code", monospace',
 
 		// the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
 		// if left empty, your system's login shell will be used by default
@@ -66,8 +66,8 @@ module.exports = {
 	//   `@company/project`
 	//   `project#1.0.1`
 	plugins: [
-		"hyper-solarized-dark",
 		"hyper-font-ligatures",
+		// "hyper-solarized-dark",
 		// "hyper-opacity",
 		// 'hyperterm-base16-tomorrow-dark'
 	],

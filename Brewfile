@@ -14,7 +14,7 @@ brew 'dockutil'
 #brew 'trash' # Manage the Trash bin
 
 # Apps
-cask 'font-fira-code'
+cask 'font-fira-code-nerd-font'
 cask 'alfred'
 cask 'docker'
 cask 'firefox'

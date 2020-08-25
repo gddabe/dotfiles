@@ -11,8 +11,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-# change to pure prompt
-prompt pure
 
 # enable fzf search in cmd...
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.p10k.zsh ] && source ~/.p10k.zsh
