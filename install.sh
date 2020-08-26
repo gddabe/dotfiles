@@ -9,7 +9,7 @@ echo "Installing bundles..."
 brew bundle install
 
 echo "Installing fzf integration..."
-$(brew --prefix)/opt/fzf/install
+yes | $(brew --prefix)/opt/fzf/install
 
 if [ ! -d ${ZDOTDIR:-$HOME}/.zprezto ]; then
 	echo "Installing prezto..."
