@@ -67,7 +67,7 @@ module.exports = {
 	//   `project#1.0.1`
 	plugins: [
 		"hyper-font-ligatures",
-		"hypercwd",
+		"hyper-samewd",
 		"hyper-solarized-dark",
 		// "hyper-opacity",
 		// 'hyperterm-base16-tomorrow-dark'
