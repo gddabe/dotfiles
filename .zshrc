@@ -13,5 +13,7 @@ fi
 # Customize to your needs...
 
 # enable fzf search in cmd...
+# [ -f ~/.p10k.zsh ] && source ~/.p10k.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-[ -f ~/.p10k.zsh ] && source ~/.p10k.zsh
+source ~/.dotfiles/.aliases
+source ~/.dotfiles/.functions
