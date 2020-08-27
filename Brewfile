@@ -2,9 +2,11 @@ tap 'homebrew/cask-fonts'
 
 # Binaries
 brew 'coreutils' # Those that come with macOS are outdated
+brew 'tldr'
+brew 'htop'
 brew 'zsh'
 brew 'git'
-brew 'antigen'
+# brew 'antigen'
 brew 'tree' # List directories in a tree structure
 brew 'z'
 brew 'fzf'
@@ -15,6 +17,7 @@ brew 'dockutil'
 
 # Apps
 cask 'font-fira-code-nerd-font'
+cask 'font-meslo-for-powerline'
 cask 'alfred'
 cask 'docker'
 cask 'firefox'

@@ -41,7 +41,7 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 alias backup='rsync -ahvP --exclude=".DS_Store"'
 
 # Brew update
-alias update="brew update && brew outdated && brew upgrade && brew cleanup"
+alias update="brew update && brew outdated && brew upgrade && brew cleanup && zprezto-update"
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec ${SHELL} -l"
@@ -53,7 +53,6 @@ alias path='echo -e ${PATH//:/\\n}'
 # Copy pubkey to pasteboard
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 
-alias jav="jav -o . -s"
 alias mp4="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'"
 alias mp3="youtube-dl -x --audio-format mp3"
 alias j="z"

@@ -12,8 +12,8 @@ module.exports = {
 		fontSize: 12,
 
 		// font family with optional fallbacks
-		fontFamily: '"FiraCodeNerdFontComplete-Retina", monospace',
-		// fontFamily: '"FiraCode-Retina", "Fira Code", monospace',
+		// fontFamily: '"FiraCodeNerdFontComplete-Retina", monospace',
+		fontFamily: '"Meslo LG S for Powerline", monospace',
 
 		// the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
 		// if left empty, your system's login shell will be used by default
