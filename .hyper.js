@@ -26,8 +26,8 @@ module.exports = {
 
 	plugins: [
 		"hyper-font-ligatures",
-		"hyper-samewd",
-		"hyper-dracula",
+		// "hyper-samewd",
+		// "hyper-dracula",
 		// "hyper-solarized-dark",
 		// "hyper-opacity",
 		// 'hyperterm-base16-tomorrow-dark'

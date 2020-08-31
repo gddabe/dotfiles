@@ -7,17 +7,9 @@ function mkd() {
 function cdf() { # short for `cdfinder`
 	cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')";
 }
-update
-# Use Gitâ€™s colored diff when available
-hash git &>/dev/null
-if [ $? -eq 0 ]; then
-  function diff() {
-    git diff --no-index --color-words "$@"
-  }
-fi
 
 # Start an HTTP server from a directory, optionally specifying the port
-function server() {
+function www() {
   local port="${1:-8000}";
   sleep 1 && open "http://localhost:${port}/" &
   # Set the default Content-Type to `text/plain` instead of `application/octet-stream`
@@ -55,24 +47,12 @@ function t() {
   tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX
 }
 
-# x - search in your command history and execute selected command
-function x() {
-  eval $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
-}
-
 # fd - cd to selected directory
 function fd() {
   local dir
   dir=$(find ${1:-.} -path '*/\.*' -prune \
   	-o -type d -print 2> /dev/null | fzf +m) &&
   cd "$dir"
-}
-
-# ff - cd into the directory of the selected file
-function ff() {
-   local file
-   local dir
-   file=$(fzf +m -q "$1") && dir=$(dirname "$file") && cd "$dir"
 }
 
 # Determine size of a file or total size of a directory
@@ -89,21 +69,21 @@ function fs() {
   fi
 }
 
-# Only list out directory > 300M and sort them
-function fss() {
-  if du -b /dev/null > /dev/null 2>&1; then
-    local arg=-sbh
-  else
-    local arg=-sh
-  fi
-  if [[ -n "$@" ]]; then
-    du $arg -- "$@" | grep  "[0-9]G\|[0-9]\{1\}M" | sort -rh
-  else
-    du $arg .[^.]* * | grep  "[0-9]G\|[0-9]\{1\}M" | sort -rh
-  fi
-}
-
 function gf() {
   preview="git diff $@ --color=always -- {-1}"
   git diff $@ --name-only | fzf -m --ansi --preview $preview
 }
+
+# # Only list out directory > 300M and sort them
+# function fss() {
+#   if du -b /dev/null > /dev/null 2>&1; then
+#     local arg=-sbh
+#   else
+#     local arg=-sh
+#   fi
+#   if [[ -n "$@" ]]; then
+#     du $arg -- "$@" | grep  "[0-9]G\|[0-9]\{1\}M" | sort -rh
+#   else
+#     du $arg .[^.]* * | grep  "[0-9]G\|[0-9]\{1\}M" | sort -rh
+#   fi
+# }
