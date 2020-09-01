@@ -37,7 +37,7 @@ ln -sf ~/.dotfiles/.gitignore ~/.gitignore
 ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/.dotfiles/.editorconfig ~/.editorconfig
 ln -sf ~/.dotfiles/.hyper.js ~/.hyper.js
-ln ~/.dotfiles/.p10k.zsh ~/.p10k.zsh
+ln -f ~/.dotfiles/.p10k.zsh ~/.p10k.zsh
 
 echo "Making zsh the default shell..."
 chsh -s $(which zsh)

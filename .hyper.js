@@ -4,17 +4,8 @@
 
 module.exports = {
 	config: {
-		// must be set to false to make it works with hyper-font-ligatures
-		webGLRenderer: false,
-
-		// Choose either "stable" for receiving highly polished,
-		// or "canary" for less polished but more frequent updates
 		updateChannel: "stable",
-
-		// default font size in pixels for all tabs
 		fontSize: 12,
-
-		// font family with optional fallbacks
 		fontFamily: '"FiraCodeNerdFontComplete-Retina", monospace',
 		// fontFamily: '"FiraCode-Retina", "Fira Code", monospace',
 		// fontFamily: '"Meslo LG S for Powerline", monospace',
@@ -22,12 +13,15 @@ module.exports = {
 		shell: "/usr/local/bin/zsh",
 		shellArgs: ["--login"],
 		copyOnSelect: true,
+
+		// must be set to false to make it works with hyper-font-ligatures
+		webGLRenderer: false,
 	},
 
 	plugins: [
 		"hyper-font-ligatures",
-		// "hyper-samewd",
-		// "hyper-dracula",
+		"hyper-samewd",
+		"hyper-dracula",
 		// "hyper-solarized-dark",
 		// "hyper-opacity",
 		// 'hyperterm-base16-tomorrow-dark'
