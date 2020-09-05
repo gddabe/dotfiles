@@ -10,7 +10,7 @@ alias lt='ls --tree'
 alias h=' fc -il 1'
 
 # Enable aliases to be sudo’ed
-alias sudo='sudo '
+# alias sudo='sudo '
 
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
