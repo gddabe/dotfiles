@@ -1,5 +1,3 @@
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=50'
-
 [[ -f ~/.cache/p10k-instant-prompt-${(%):-%n}.zsh ]] && source ~/.cache/p10k-instant-prompt-${(%):-%n}.zsh
 [[ -f ~/.zprezto/init.zsh ]] && source ~/.zprezto/init.zsh
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
@@ -7,3 +5,5 @@ export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=50'
 
 source ~/.dotfiles/.aliases
 source ~/.dotfiles/.functions
+
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
