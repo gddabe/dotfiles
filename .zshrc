@@ -5,5 +5,6 @@
 
 source ~/.dotfiles/.aliases
 source ~/.dotfiles/.functions
+source /usr/local/etc/profile.d/z.sh
 
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
