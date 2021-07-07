@@ -1,9 +1,9 @@
 local applicationHotkeys = {
-  q = 'Hyper',
+  q = 'Google Chrome',
   w = 'iTerm',
 	e = 'Visual Studio Code',
 	a = '',
-  s = '',
+  s = 'Spotify',
 	d = '',
 	z = '',
   x = '',
