@@ -6,7 +6,7 @@ local applicationHotkeys = {
   s = 'Spotify',
 	d = '',
 	z = '',
-  x = '',
+  x = 'Slack',
 	c = '',
 	tab = 'Finder'
 }
