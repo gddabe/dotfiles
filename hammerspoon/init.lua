@@ -4,6 +4,8 @@ require('watcher')
 -- require('position')
 require('app')
 
+local spotify = require "spotify"
+
 hs.window.animationDuration = 0.1
 hs.hotkey.bind(hyper, "h", function()
   local win = hs.window.focusedWindow();
@@ -36,3 +38,12 @@ hs.hotkey.bind(hyper, "space", function()
   -- and move the window to the next screen setting the same unitRect
   win:move(win:frame():toUnitRect(screen:frame()), screen:next(), true, 0)
 end)
+
+
+-- Spotify
+-- hs.hotkey.bind(hyper, "S", spotify.playing)
+hs.hotkey.bind(hyper, "Right", spotify.nextNotify)
+-- hs.hotkey.bind(KPhyper, "D", spotify.nextNotify)
+hs.hotkey.bind(hyper, "Left", spotify.previousNotify)
+-- hs.hotkey.bind(KPhyper, "A", spotify.previousNotify)
+hs.hotkey.bind(hyper, "Up", spotify.toggle)
