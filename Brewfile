@@ -12,7 +12,7 @@ brew 'tree'
 brew 'z'
 brew 'fzf'
 brew 'dockutil'
-brew 'trash'
+brew 'exa'
 
 # Apps
 cask 'font-fira-code-nerd-font'

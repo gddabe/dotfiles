@@ -1,10 +1,14 @@
 alias vi="vim"
 
 # alias ls='lsd'
-alias l='ls -l'
-alias la='ls -a'
-alias lla='ls -la'
-alias lt='ls --tree'
+# alias l='ls -l'
+# alias la='ls -a'
+# alias lla='ls -la'
+# alias lt='ls --tree'
+alias ls=' exa'
+# alias ll=' exa -lTL 1'
+# alias ll='f() { exa -lTL $1 };f'
+alias lg=' exa -lG'
 
 # Show history with timestamp
 alias h=' fc -il 1'
