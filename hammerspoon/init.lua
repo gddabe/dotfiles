@@ -1,10 +1,41 @@
 hyper = {"ctrl", "alt", "cmd", "shift"}
 
-require('watcher')
--- require('position')
-require('app')
+-----------------------------------------
+-- Reload Config
+function reload_config(files)
+    hs.reload()
+end
+-----------------------------------------
+-- Application Keybinding
+local applicationHotkeys = {
+    c = 'Google Chrome',
+    h = 'Hyper',
+    v = 'Visual Studio Code',
+    s = 'Slack',
+    b = 'Brave Browser',
+    n = 'Notion',
 
-local spotify = require "spotify"
+    tab = 'Finder'
+}
+for key, app in pairs(applicationHotkeys) do
+    hs.hotkey.bind(hyper, key, function()
+        hs.application.launchOrFocus(app)
+    end)
+end
+-----------------------------------------
+
+hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reload_config):start()
+hs.alert.show("  Ready!  ")
+
+-- local spotify = require "spotify"
+
+-- -- Spotify
+-- -- hs.hotkey.bind(hyper, "S", spotify.playing)
+-- hs.hotkey.bind(hyper, "Right", spotify.nextNotify)
+-- -- hs.hotkey.bind(KPhyper, "D", spotify.nextNotify)
+-- hs.hotkey.bind(hyper, "Left", spotify.previousNotify)
+-- -- hs.hotkey.bind(KPhyper, "A", spotify.previousNotify)
+-- hs.hotkey.bind(hyper, "Up", spotify.toggle)
 
 -- hs.window.animationDuration = 0.1
 -- hs.hotkey.bind(hyper, "h", function()
@@ -38,12 +69,3 @@ local spotify = require "spotify"
 --   -- and move the window to the next screen setting the same unitRect
 --   win:move(win:frame():toUnitRect(screen:frame()), screen:next(), true, 0)
 -- end)
-
-
--- -- Spotify
--- -- hs.hotkey.bind(hyper, "S", spotify.playing)
--- hs.hotkey.bind(hyper, "Right", spotify.nextNotify)
--- -- hs.hotkey.bind(KPhyper, "D", spotify.nextNotify)
--- hs.hotkey.bind(hyper, "Left", spotify.previousNotify)
--- -- hs.hotkey.bind(KPhyper, "A", spotify.previousNotify)
--- hs.hotkey.bind(hyper, "Up", spotify.toggle)
