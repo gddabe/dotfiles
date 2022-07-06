@@ -14,7 +14,8 @@ local applicationHotkeys = {
     s = 'Slack',
     b = 'Brave Browser',
     n = 'Notion',
-
+    p = 'Spotify',
+    f = 'Figma',
     tab = 'Finder'
 }
 for key, app in pairs(applicationHotkeys) do

@@ -11,11 +11,6 @@ brew bundle install
 echo "Installing fzf integration..."
 yes | $(brew --prefix)/opt/fzf/install
 
-if [ ! -d ${ZDOTDIR:-$HOME}/.zprezto ]; then
-	echo "Installing prezto..."
-	git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
-fi
-
 echo "Getting pubkey from github..."
 mkdir -p ~/.ssh
 # if id_rsa.pub doesn't exist
@@ -30,14 +25,12 @@ dockutil --no-restart --add "/Applications/Hyper.app"
 
 killall Dock
 
-ln -sf ~/.dotfiles/.zpreztorc ~/.zpreztorc
-ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 ln -sf ~/.dotfiles/hammerspoon ~/.hammerspoon
 ln -sf ~/.dotfiles/.gitignore ~/.gitignore
 ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/.dotfiles/.editorconfig ~/.editorconfig
 ln -sf ~/.dotfiles/.hyper.js ~/.hyper.js
-ln -f ~/.dotfiles/.p10k.zsh ~/.p10k.zsh
+ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 
 echo "Making zsh the default shell..."
 chsh -s $(which zsh)

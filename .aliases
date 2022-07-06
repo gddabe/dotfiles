@@ -1,47 +1,44 @@
-alias vi="vim"
+alias ls=' exa --icons'
+alias lsa=' exa -la --icons'
+alias la=' exa -la --icons'
+alias lg=' exa -lG --icons'
+alias l=' exa -l --icons'
+alias ll=' exa -lT --level 2 --icons'
+alias lll=' exa -lT --level 3 --icons'
+alias lrt=' exa -l --icons --sort newest'
+alias lart=' exa -la --icons --sort newest'
 
-# alias ls='lsd'
-# alias l='ls -l'
-# alias la='ls -a'
-# alias lla='ls -la'
-# alias lt='ls --tree'
-alias ls=' exa'
-# alias ll=' exa -lTL 1'
-# alias ll='f() { exa -lTL $1 };f'
-alias lg=' exa -lG'
+# # Show history with timestamp
+# alias h=' fc -il 1'
 
-# Show history with timestamp
-alias h=' fc -il 1'
+# # Enable aliases to be sudo’ed
+# # alias sudo='sudo '
 
-# Enable aliases to be sudo’ed
-# alias sudo='sudo '
+# # Show/hide hidden files in Finder
+# alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+# alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
-# Show/hide hidden files in Finder
-alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
-alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+# # Show/hide all desktop icons (useful when presenting)
+# alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+# alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 
-# Show/hide all desktop icons (useful when presenting)
-alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
-alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+# # Lock the screen (when going AFK)
+# alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
-# Lock the screen (when going AFK)
-alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
-
-# Backup
-alias backup='rsync -ahvP --exclude=".DS_Store"'
+# # Backup
+# alias backup='rsync -ahvP --exclude=".DS_Store"'
 
 # Brew update
-alias update="brew update && brew outdated && brew upgrade && brew cleanup && zprezto-update"
+alias update="brew update && brew outdated && brew upgrade && brew cleanup"
 
 # Reload the shell (i.e. invoke as a login shell)
-alias reload="exec ${SHELL} -l"
-# alias reload=". ~/.zshrc"
+alias reload=". ~/.zshrc"
 
-# Print each PATH entry on a separate line
-alias path='echo -e ${PATH//:/\\n}'
+# # Print each PATH entry on a separate line
+# alias path='echo -e ${PATH//:/\\n}'
 
-# Copy pubkey to pasteboard
-alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
+# # Copy pubkey to pasteboard
+# alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 
-alias mp4="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'"
-alias mp3="youtube-dl -x --audio-format mp3"
+# alias mp4="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'"
+# alias mp3="youtube-dl -x --audio-format mp3"

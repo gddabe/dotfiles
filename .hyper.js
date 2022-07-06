@@ -6,7 +6,8 @@ module.exports = {
 	config: {
 		updateChannel: "stable",
 		fontSize: 12,
-		fontFamily: '"FiraCodeNerdFontComplete-Retina", monospace',
+		fontFamily: '"FiraCode Nerd Font", monospace', // with icons
+		// fontFamily: '"Fira Code", monospace', // without icons
 		// fontFamily: '"FiraCode-Retina", "Fira Code", monospace',
 		// fontFamily: '"Meslo LG S for Powerline", monospace',
 
