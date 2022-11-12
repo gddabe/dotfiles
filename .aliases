@@ -1,12 +1,12 @@
 alias ls=' exa --icons'
-alias lsa=' exa -la --icons'
-alias la=' exa -la --icons'
-alias lg=' exa -lG --icons'
+# alias lsa=' exa -la --icons'
+# alias la=' exa -la --icons'
+# alias lg=' exa -lG --icons'
 alias l=' exa -l --icons'
 alias ll=' exa -lT --level 2 --icons'
 alias lll=' exa -lT --level 3 --icons'
-alias lrt=' exa -l --icons --sort newest'
-alias lart=' exa -la --icons --sort newest'
+# alias lrt=' exa -l --icons --sort newest'
+# alias lart=' exa -la --icons --sort newest'
 
 # # Show history with timestamp
 # alias h=' fc -il 1'
@@ -32,7 +32,7 @@ alias lart=' exa -la --icons --sort newest'
 alias update="brew update && brew outdated && brew upgrade && brew cleanup"
 
 # Reload the shell (i.e. invoke as a login shell)
-alias reload=". ~/.zshrc"
+alias reload="source ~/.zshrc"
 
 # # Print each PATH entry on a separate line
 # alias path='echo -e ${PATH//:/\\n}'

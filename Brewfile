@@ -1,37 +1,27 @@
-tap 'homebrew/cask-fonts'
+# Prompt
+brew 'starship'
 
 # Binaries
-brew 'coreutils'
-brew 'tldr'
-brew 'lsd'
-brew 'bat'
-brew 'htop'
-brew 'zsh'
 brew 'git'
-brew 'tree'
+brew 'coreutils'
+brew 'tldr' # man
+brew 'bat' # cat
+brew 'zsh'
 brew 'z'
-brew 'fzf'
-brew 'dockutil'
-brew 'exa'
+brew 'exa' # ls
 
 # Apps
 cask 'font-fira-code-nerd-font'
-cask 'font-meslo-for-powerline'
-#cask 'alfred'
 cask 'docker'
-#cask 'firefox'
 cask 'brave-browser'
 cask 'google-chrome'
 cask 'the-unarchiver'
 cask 'telegram'
 cask 'whatsapp'
-#cask 'signal'
 cask 'karabiner-elements'
 cask 'hammerspoon'
-cask 'hyper'
 cask 'iterm2'
 cask 'visual-studio-code'
 cask 'iina'
 cask 'bitwarden'
-cask 'spotify'
 cask 'itsycal'
