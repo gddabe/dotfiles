@@ -11,6 +11,7 @@ brew 'z'
 brew 'exa' # ls
 
 # Apps
+# cask 'bitwarden' # use app store version for browser touch id support
 cask 'font-fira-code-nerd-font'
 cask 'docker'
 cask 'brave-browser'
@@ -23,5 +24,6 @@ cask 'hammerspoon'
 cask 'iterm2'
 cask 'visual-studio-code'
 cask 'iina'
-cask 'bitwarden'
 cask 'itsycal'
+
+
