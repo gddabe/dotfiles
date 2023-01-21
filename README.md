@@ -43,13 +43,13 @@ ln -sf ~/.dotfiles/init.lua ~/.hammerspoon/init.lua
 
 ### Bitwarden
 
-> Bitwarden app - install app store version to allow bio browser integration setting
+#### Bitwarden app - install app store version to allow bio browser integration setting
 
 - unlock with touch id
 - allow browser integration
 - allow duckduckgo browser integration
 
-> Browser extension setting
+#### Browser extension setting
 
 - In your Browser, navigate to the extensions manager (e.g. chrome://extensions or brave://extensions), open Bitwarden, and toggle the Allow access to file URLs option.
 - In your browser extension, open the  Settings tab
