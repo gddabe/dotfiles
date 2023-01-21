@@ -1,10 +1,19 @@
-alias ls=' exa --icons'
-# alias lsa=' exa -la --icons'
-# alias la=' exa -la --icons'
-# alias lg=' exa -lG --icons'
-alias l=' exa -l --icons'
-alias ll=' exa -lT --level 2 --icons'
-alias lll=' exa -lT --level 3 --icons'
+# Brew update
+alias update="brew update && brew outdated && brew upgrade && brew cleanup"
+
+# Reload the shell (i.e. invoke as a login shell)
+alias reload="source ~/.zshrc"
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+# alias ls=' exa'
+# alias l=' exa -l'
+# alias ll=' exa -lT --level 2'
+# alias lll=' exa -lT --level 3'
+
 # alias lrt=' exa -l --icons --sort newest'
 # alias lart=' exa -la --icons --sort newest'
 
@@ -28,11 +37,7 @@ alias lll=' exa -lT --level 3 --icons'
 # # Backup
 # alias backup='rsync -ahvP --exclude=".DS_Store"'
 
-# Brew update
-alias update="brew update && brew outdated && brew upgrade && brew cleanup"
 
-# Reload the shell (i.e. invoke as a login shell)
-alias reload="source ~/.zshrc"
 
 # # Print each PATH entry on a separate line
 # alias path='echo -e ${PATH//:/\\n}'
