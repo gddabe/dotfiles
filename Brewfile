@@ -1,5 +1,5 @@
 # Prompt
-brew 'starship'
+brew 'pure'
 
 # Binaries
 brew 'git'
@@ -14,19 +14,17 @@ brew 'hpedrorodrigues/tools/dockutil'
 # Apps
 # cask 'bitwarden' # use app store version for browser touch id support
 cask 'font-fira-code-nerd-font'
-#cask 'docker'
 cask 'brave-browser'
 cask 'google-chrome'
 cask 'the-unarchiver'
-# cask 'telegram'
-# cask 'whatsapp'
-# cask 'karabiner-elements'
-# cask 'hammerspoon'
+cask 'karabiner-elements'
+cask 'hammerspoon'
 cask 'iterm2'
 cask 'visual-studio-code'
 cask 'iina'
-# cask 'itsycal'
 cask 'stats'
 cask 'rectangle'
 
-
+# cask 'telegram'
+# cask 'whatsapp'
+# cask 'itsycal'

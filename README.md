@@ -1,24 +1,24 @@
 # Installation
 
-#### Homebrew
+### Homebrew
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-#### Clone dotfiles
+### Clone dotfiles
 
 ```
 git clone https://github.com/gddabe/dotfiles.git ~/.dotfiles && cd ~/.dotfiles
 ```
 
-#### Brewfiles
+### Brewfiles
 
 ```
 brew bundle install
 ```
 
-#### iterm2
+### iterm2
 
 ```
 # Specify the preferences directory
@@ -41,16 +41,15 @@ ln -sf ~/.dotfiles/init.lua ~/.hammerspoon/init.lua
 
 - copy all files in .ssh folder from old machine to new machine
 
-#### Bitwarden
+### Bitwarden
 
-> install app store version to allow bio browser integration
-> setting
+> Bitwarden app - install app store version to allow bio browser integration setting
 
 - unlock with touch id
 - allow browser integration
 - allow duckduckgo browser integration
 
-browser
+> Browser extension setting
 
 - In your Browser, navigate to the extensions manager (e.g. chrome://extensions or brave://extensions), open Bitwarden, and toggle the Allow access to file URLs option.
 - In your browser extension, open the  Settings tab
