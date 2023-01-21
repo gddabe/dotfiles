@@ -34,6 +34,7 @@ defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
 ln -sf ~/.dotfiles/.gitignore ~/.gitignore
 ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/.dotfiles/.zshrc ~/.zshrc
+ln -sf ~/.dotfiles/.hammerspoon/init.lua ~/.dotfiles/init.lua
 ```
 
 ### ssh
