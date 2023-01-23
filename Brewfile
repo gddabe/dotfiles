@@ -6,10 +6,14 @@ brew 'git'
 brew 'coreutils'
 brew 'tldr' # man
 brew 'bat' # cat
-brew 'zsh'
 brew 'z'
 brew 'exa' # ls
 brew 'hpedrorodrigues/tools/dockutil'
+
+# Zsh
+brew 'zsh'
+brew 'zsh-syntax-highlighting'
+brew 'zsh-autosuggestions'
 
 # Apps
 # cask 'bitwarden' # use app store version for browser touch id support
