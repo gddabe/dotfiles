@@ -9,6 +9,7 @@ end
 -- Application Keybinding
 local applicationHotkeys = {
     c = 'Google Chrome',
+	d = 'Discord',
     h = 'Hyper',
     v = 'Visual Studio Code',
     s = 'Slack',
