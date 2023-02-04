@@ -28,7 +28,8 @@ cask 'visual-studio-code'
 cask 'iina'
 cask 'stats'
 cask 'rectangle'
+cask 'itsycal'
 
 # cask 'telegram'
 # cask 'whatsapp'
-# cask 'itsycal'
+

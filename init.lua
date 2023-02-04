@@ -13,6 +13,7 @@ local applicationHotkeys = {
     h = 'Hyper',
     v = 'Visual Studio Code',
     s = 'Slack',
+	t = 'iterm',
     b = 'Brave Browser',
     n = 'Notion',
     y = 'YouTube Music',
