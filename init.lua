@@ -19,6 +19,7 @@ local applicationHotkeys = {
     y = 'YouTube Music',
     f = 'Figma',
     w = 'WhatsApp',
+	g = 'ChatGPT',
     tab = 'Finder'
 }
 for key, app in pairs(applicationHotkeys) do
