@@ -23,11 +23,35 @@ local applicationHotkeys = {
 	m = 'Gmail Desktop',
     tab = 'Finder'
 }
+local lastApp = nil
+hs.application.enableSpotlightForNameSearches(true)
+
 for key, app in pairs(applicationHotkeys) do
     hs.hotkey.bind(hyper, key, function()
-        hs.application.launchOrFocus(app)
+        local frontmostApp = hs.application.frontmostApplication()
+        local focusedApp = hs.application.get(app)
+
+        if frontmostApp and frontmostApp:name() == app then
+            frontmostApp:hide()
+            lastApp = nil
+        else
+            hs.application.launchOrFocus(app)
+            if focusedApp and focusedApp:isFrontmost() then
+                lastApp = app
+            else
+                lastApp = nil
+            end
+
+        end
     end)
 end
+
+hs.hotkey.bind(hyper, 'z', function()
+    if lastApp then
+        hs.application.launchOrFocus(lastApp)
+        hs.alert.show("Switching to " .. lastApp)
+    end
+end)
 -----------------------------------------
 
 hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reload_config):start()
