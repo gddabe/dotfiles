@@ -1,6 +1,10 @@
 fpath+=("$(brew --prefix)/share/zsh/site-functions")
 export PATH="/usr/local/opt/python@3.10/libexec/bin:$PATH"
 
+## For nvm
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
 autoload -U promptinit; promptinit
 prompt pure
 
