@@ -17,7 +17,6 @@ brew 'zsh-autosuggestions'
 
 # Apps
 # cask 'bitwarden' # use app store version for browser touch id support
-cask 'font-fira-code-nerd-font'
 cask 'brave-browser'
 cask 'google-chrome'
 cask 'the-unarchiver'
@@ -29,6 +28,12 @@ cask 'iina'
 cask 'stats'
 cask 'rectangle'
 cask 'itsycal'
+
+# Fonts
+cask 'font-fira-code-nerd-font'
+cask 'font-sf-pro'
+cask 'font-sf-mono'
+cask 'font-sf-compact'
 
 # cask 'telegram'
 # cask 'whatsapp'
