@@ -8,7 +8,6 @@ brew 'tldr' # man
 brew 'bat' # cat
 brew 'z'
 brew 'exa' # ls
-brew 'hpedrorodrigues/tools/dockutil'
 
 # Zsh
 brew 'zsh'
@@ -34,7 +33,9 @@ cask 'font-fira-code-nerd-font'
 cask 'font-sf-pro'
 cask 'font-sf-mono'
 cask 'font-sf-compact'
+cask 'font-dm-serif-text'
+cask 'font-dm-serif-display'
+cask 'font-dm-mono'
 
 # cask 'telegram'
 # cask 'whatsapp'
-
