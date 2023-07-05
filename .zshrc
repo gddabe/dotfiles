@@ -1,5 +1,4 @@
 fpath+=("$(brew --prefix)/share/zsh/site-functions")
-export PATH="/usr/local/opt/python@3.10/libexec/bin:$PATH"
 
 autoload -U promptinit; promptinit
 prompt pure
