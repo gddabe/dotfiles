@@ -19,7 +19,7 @@ local applicationHotkeys = {
     y = 'YouTube Music',
     f = 'Figma',
     w = 'WhatsApp',
-	g = 'ChatGPT',
+	g = 'Google Chat',
 	m = 'Gmail Desktop',
     tab = 'Finder'
 }
