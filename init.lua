@@ -20,7 +20,7 @@ local applicationHotkeys = {
     f = 'Figma',
     w = 'WhatsApp',
 	g = 'Google Chat',
-	m = 'Gmail Desktop',
+	m = 'Miro',
     tab = 'Finder'
 }
 local lastApp = nil
