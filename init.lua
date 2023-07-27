@@ -21,6 +21,7 @@ local applicationHotkeys = {
     w = 'WhatsApp',
 	g = 'Google Chat',
 	m = 'Miro',
+    x = 'Google Chrome Canary',
     tab = 'Finder'
 }
 local lastApp = nil
