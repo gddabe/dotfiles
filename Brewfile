@@ -8,6 +8,8 @@ brew 'tldr' # man
 brew 'bat' # cat
 brew 'z'
 brew 'exa' # ls
+brew 'btop'
+brew 'dust'
 
 # Zsh
 brew 'zsh'
