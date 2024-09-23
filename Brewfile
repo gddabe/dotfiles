@@ -19,13 +19,13 @@ brew 'zsh-autosuggestions'
 
 # Apps
 # cask 'bitwarden' # use app store version for browser touch id support
-#cask 'brave-browser'
-#cask 'google-chrome'
+cask 'brave-browser'
+cask 'google-chrome'
 cask 'the-unarchiver'
 #cask 'karabiner-elements'
 #cask 'hammerspoon'
-#cask 'iterm2'
-#cask 'visual-studio-code'
+cask 'iterm2'
+cask 'visual-studio-code'
 cask 'iina'
 #cask 'stats'
 #cask 'rectangle'
