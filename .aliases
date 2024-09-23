@@ -9,7 +9,8 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
-alias qpdfcompress='qpdf --stream-data=compress --object-streams=generate $1 -'
+# alias qpdfcompress='qpdf --stream-data=compress --object-streams=generate $1 -'
+alias ls=' lsd'
 
 
 # alias ls=' exa'

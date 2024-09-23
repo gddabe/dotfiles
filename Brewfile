@@ -7,9 +7,10 @@ brew 'coreutils'
 brew 'tldr' # man
 brew 'bat' # cat
 brew 'z'
-brew 'exa' # ls
+brew 'nvm'
 brew 'btop'
 brew 'dust'
+brew 'lsd' # replace exa as it is demised
 
 # Zsh
 brew 'zsh'
@@ -18,17 +19,17 @@ brew 'zsh-autosuggestions'
 
 # Apps
 # cask 'bitwarden' # use app store version for browser touch id support
-cask 'brave-browser'
-cask 'google-chrome'
+#cask 'brave-browser'
+#cask 'google-chrome'
 cask 'the-unarchiver'
-cask 'karabiner-elements'
-cask 'hammerspoon'
-cask 'iterm2'
-cask 'visual-studio-code'
+#cask 'karabiner-elements'
+#cask 'hammerspoon'
+#cask 'iterm2'
+#cask 'visual-studio-code'
 cask 'iina'
-cask 'stats'
-cask 'rectangle'
-cask 'itsycal'
+#cask 'stats'
+#cask 'rectangle'
+#cask 'itsycal'
 
 # Fonts
 cask 'font-fira-code-nerd-font'
