@@ -66,6 +66,40 @@ function gf() {
   git diff $@ --name-only | fzf -m --ansi --preview $preview
 }
 
+function reduce() {
+  local remove_source=false
+  local files=()
+
+  # Parse arguments
+  for arg in "$@"; do
+    if [[ "$arg" == "-r" ]]; then
+      remove_source=true
+    else
+      files+=("$arg")
+    fi
+  done
+
+  # If no files provided, search for all HEIC files (case-insensitive)
+  if [[ ${#files[@]} -eq 0 ]]; then
+    files=( *.(#i)heic(N) )
+  fi
+
+  # Process each file
+  for file in "${files[@]}"; do
+    if [[ -f "$file" ]]; then
+      width=$(sips -g pixelWidth "$file" | awk '/pixelWidth:/ {printf "%d", $2 * 0.5}')
+      height=$(sips -g pixelHeight "$file" | awk '/pixelHeight:/ {printf "%d", $2 * 0.5}')
+      sips -s format jpeg -s formatOptions 80 --resampleWidth "$width" --resampleHeight "$height" "$file" --out "${file%.*}.jpg"
+
+      if [[ "$remove_source" == true ]]; then
+        rm "$file"
+      fi
+    else
+      echo "File not found: $file"
+    fi
+  done
+}
+
 # # Only list out directory > 300M and sort them
 # function fss() {
 #   if du -b /dev/null > /dev/null 2>&1; then
